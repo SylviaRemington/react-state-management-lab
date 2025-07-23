@@ -34,18 +34,23 @@ If you are developing a production application, we recommend using TypeScript wi
 ## Exercise
 Follow these steps to complete the exercise. Keep all your code in the App.jsx file for this exercise.
 
+### Step 1
 1. Create a new state variable named team and set the initial state to an empty array [].
 
+### Step 2
 2. Create a new state variable named money and set the initial state to 100.
 
+### Step 3
 3. Create a new state variable named zombieFighters and set the initial state to the following array of objects: (Array of objects supplied by General Assembly).
 
+### Step 4
 4. Display the list of zombieFighters by mapping the array into the UI of App.jsx.
 
 - (We’ve provided some helpful CSS, assuming you use ul and li elements.)
 - Each character should have an **image**, **name**, **price**, **strength**, and **agility**.
 - Each character’s UI should also have an **Add** button to add them to your team.
 
+### Step 5
 5. Display the current value of money in the UI.
 
 6. Create a function named **handleAddFighter()**. It should accept a fighter object as an argument. This function will be triggered when you click the **Add** button for any character in the **zombieFighters** list.
@@ -72,7 +77,7 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 - Calculate the total strength of the team and assign it to the **totalStrength** variable. This calculation should sum up the strength values of all characters currently on the team!
 - Show the value of totalStrength in the UI. If the team array is empty, **totalStrength** should be 0.
 
-- **Why doesn’t totalStrength need to be a state variable? Recall that every time a component is re-rendered in React, the code in that component re-runs. When the component re-renders, we can calculate the total strength of the team based on the data from the team state at that time.**
+**Why doesn’t totalStrength need to be a state variable? Recall that every time a component is re-rendered in React, the code in that component re-runs. When the component re-renders, we can calculate the total strength of the team based on the data from the team state at that time.**
 
 **If the team state changes, a re-render will be triggered, and totalStrength will be recalculated with the new team data.**
 
