@@ -53,6 +53,7 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 ### Step 5
 5. Display the current value of money in the UI.
 
+### Step 6
 6. Create a function named **handleAddFighter()**. It should accept a fighter object as an argument. This function will be triggered when you click the **Add** button for any character in the **zombieFighters** list.
 
 - When you click Add on a character, this function should add the selected character’s object to the existing team state array. This is how you build your team.
@@ -65,12 +66,14 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 
 - Before adding a character to the team, check if you have enough money to afford them. If your money is less than the character’s price, you shouldn’t be able to add them. In such cases, log a message to the console, such as **"Not enough money"**.
 
+### Step 7
 7. Now that you can add characters to your team let’s focus on displaying and managing them within your application’s interface.
 
 - First, verify if your team array has any characters in it. If the **team** array length is 0, display **Pick some team members!** in the UI.
 
 - If there are characters in your team, display each one in the UI. For each character in the team array, show their **name, image, price, strength, and agility**. Follow the same pattern you used to display the array of all characters.
 
+### Step 8
 8. Display the team’s total strength: In this step, you’ll create a variable to keep track of the total strength of your team and display it in the UI.
 
 - Create a regular variable named **totalStrength**. This does not need to be a state variable.
@@ -87,14 +90,17 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 
 9. Display the team’s total agility: Create a variable for the total agility of your team and display this value in the UI.
 
+### Step 9
 - Create a variable named **totalAgility**. Just like with **totalStrength**, this should not be a state variable.
 
 - Just like with strength, calculate the total agility of the team and assign it to the **totalAgility** variable. This should be the sum of the team members’ agility values.
 
 - The value of **totalAgility** should be displayed in the UI. As with strength, if your team is empty, **totalAgility** will be **0**.
 
+### Step 10
 10. Add a **Remove** button to each of the characters on your team. This button, when clicked, should call a handler function to remove the character from your team.
 
+### Step 11
 11. Create a function named **handleRemoveFighter()**. It should accept a fighter object as an argument. This handler function is key to managing your team. This function enables you to remove characters and adjust your total **money**.
 
 - This function will be executed when you click the **Remove** button for a character in your team.
