@@ -1,4 +1,6 @@
-// src/App.jsx
+// importing the useState() hook from React at top of App.jsx
+import { useState } from 'react';
+import './App.css';
 
 //Adding array of fighters of the zombies:
 const fighters = [
@@ -86,6 +88,7 @@ const fighters = [
 
 
 const App = () => {
+  // Setting up state
   //1. Creating a new state variable named team & setting initial state to an empty array.
   const [team, setTeam] = useState();
   console.log('My team state variable/value is:', team);
@@ -102,4 +105,44 @@ const App = () => {
   );
 }
 
+//4. Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH
+// Show all zombie fighters on screen by looping through the list 
+// Display the list of zombie fighters by looping through the array and rendering them in the user interface of App.jsx.
+
+
 export default App
+
+
+
+/*
+React Components I Could Create:
+(If Not Restricted to App.jsx)
+
+ZombieFighterCard
+Displays: Image, name, price, strength, agility.
+Includes: "Add" button (for available fighters).
+
+TeamMemberCard
+Displays: Image, name, price, strength, agility.
+Includes: "Remove" button (for team members).
+
+TeamStats
+Displays: Total cost, total strength, total agility of the team.
+
+MoneyDisplay
+Shows: Remaining money.
+
+EmptyTeamMessage
+Conditionally renders: "Pick some team members!" when team is empty.
+
+Why Separate These?
+ZombieFighterCard and TeamMemberCard share similar UI but different actions (Add vs. Remove).
+TeamStats and MoneyDisplay are pure calculations/display.
+EmptyTeamMessage is a conditional UI element.
+
+Boundary Clarification
+State (like team, money, zombieFighters) would stay in App.jsx and pass down via props.
+
+Logic (like handleAddFighter, handleRemoveFighter) would stay in App.jsx.
+
+*/
