@@ -89,9 +89,9 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 
 **With this in mind, what value are we holding in state now that could also be a regular variable? You don’t need to refactor your existing code to remove it from state - just identifying it is valuable.**
 
+### Step 9
 9. Display the team’s total agility: Create a variable for the total agility of your team and display this value in the UI.
 
-### Step 9
 - Create a variable named **totalAgility**. Just like with **totalStrength**, this should not be a state variable.
 
 - Just like with strength, calculate the total agility of the team and assign it to the **totalAgility** variable. This should be the sum of the team members’ agility values.
