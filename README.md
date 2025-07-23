@@ -123,3 +123,4 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 - Optionally, if you want to add some polish to the app, you could replace the placeholder images with character images. An AI assistant may be helpful in this task.
 
 - Optionally, you could also make it so a message displays in the browser when there isn’t enough budget to add a team member.
+
