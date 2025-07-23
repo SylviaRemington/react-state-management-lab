@@ -23,6 +23,7 @@ If you are developing a production application, we recommend using TypeScript wi
 - In this lab, you’ll utilize React’s state management to add and remove team members, track essential resources, and monitor your team’s overall readiness. This isn’t just about surviving; it’s about making dynamic UI updates and understanding the inner workings of React state through a fun and engaging simulation.
 
 **Zombie Fighters Image (of what I'm creating)**
+![ZombieFighters](./public/Zombie_Fighters.png)
 
 ## Exercise Overview
 - Welcome to the React State Management Lab! In this lab, we’ll interact with state to better understand how to manage it in a React application. Your task is to assemble a team of characters to survive a zombie apocalypse. You will:
