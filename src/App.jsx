@@ -116,7 +116,16 @@ const App = () => {
 
       <h2>All Available Fighters</h2>
       <ul>
-        
+        {zombieFighters.map((fighter) => (
+          <li key={fighter.id}>
+            <img src={fighter.img} alt={fighter.name} />
+            <h3>{fighter.name}</h3>
+            <p>Price: {fighter.price}</p>
+            <p>Strength: {fighter.strength}</p>
+            <p>Agility: {fighter.agility}</p>
+            <button className='button'>ADD</button>
+          </li>
+        ))}
 
       </ul>
     </>
