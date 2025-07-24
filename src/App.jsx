@@ -88,7 +88,7 @@ const fighters = [
 
 
 const App = () => {
-  // Setting up state
+  // Setting up state - state can be a boolean, a string, a number, an array of objects, a piece of data that you are using to control keeping some data on the screen & that data can be updated.
   //1. Creating a new state variable named team & setting initial state to an empty array.
   const [team, setTeam] = useState();
   console.log('My team state variable/value is:', team);
