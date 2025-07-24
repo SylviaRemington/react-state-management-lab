@@ -104,6 +104,11 @@ const App = () => {
   //3. Creating new state variable named zombieFighters & setting initial state to the array of objects - different fighters against zombies.
   const [zombieFighters, setZombieFighters] = useState(fighters);
 
+  // 6. Create a function named handleAddFighter().
+  // ! Need to understand event listeners/handlers better to do this part.
+  // const handleAddFighter = () =>
+
+
 
 
 
