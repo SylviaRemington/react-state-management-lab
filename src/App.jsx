@@ -104,9 +104,7 @@ const App = () => {
   //3. Creating new state variable named zombieFighters & setting initial state to the array of objects - different fighters against zombies.
   const [zombieFighters, setZombieFighters] = useState(fighters);
 
-  //4. Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH
-  // Show all zombie fighters on screen by looping through the list 
-  // Display the list of zombie fighters by looping through the array and rendering them in the user interface of App.jsx.
+
 
 
 
@@ -115,6 +113,9 @@ const App = () => {
       <h1>Zombie Apocalypse Fighters</h1>
 
       <h2>All Available Fighters</h2>
+      {/* 4. Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH */}
+      {/* Show all zombie fighters on screen by looping through the list  */}
+      {/* Display the list of zombie fighters by looping through the array and rendering them in the user interface of App.jsx. */}
       <ul>
         {zombieFighters.map((fighter) => (
           <li key={fighter.id}>
