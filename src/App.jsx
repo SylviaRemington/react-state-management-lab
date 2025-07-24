@@ -1,102 +1,98 @@
 // Hi Luke! I have a lot of notes on this lab, since I'm trying to understand it as I do the lesson (So I can come back later and understand what I did. Just fyi!)
 
 //importing the useState() hook from React at top of App.jsx so that can initialize & use state
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 //Adding array of fighters of the zombies:
 const fighters = [
   {
     id: 1,
-    name: 'Survivor',
+    name: "Survivor",
     price: 12,
     strength: 6,
     agility: 4,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/0c2d6b.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/0c2d6b.png",
   },
   {
     id: 2,
-    name: 'Scavenger',
+    name: "Scavenger",
     price: 10,
     strength: 5,
     agility: 5,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/033a16.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/033a16.png",
   },
   {
     id: 3,
-    name: 'Shadow',
+    name: "Shadow",
     price: 18,
     strength: 7,
     agility: 8,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/262c36.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/262c36.png",
   },
   {
     id: 4,
-    name: 'Tracker',
+    name: "Tracker",
     price: 14,
     strength: 7,
     agility: 6,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/3c1e70.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/3c1e70.png",
   },
   {
     id: 5,
-    name: 'Sharpshooter',
+    name: "Sharpshooter",
     price: 20,
     strength: 6,
     agility: 8,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/4b2900.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/4b2900.png",
   },
   {
     id: 6,
-    name: 'Medic',
+    name: "Medic",
     price: 15,
     strength: 5,
     agility: 7,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5a1e02.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5a1e02.png",
   },
   {
     id: 7,
-    name: 'Engineer',
+    name: "Engineer",
     price: 16,
     strength: 6,
     agility: 5,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e.png",
   },
   {
     id: 8,
-    name: 'Brawler',
+    name: "Brawler",
     price: 11,
     strength: 8,
     agility: 3,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/67060c.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/67060c.png",
   },
   {
     id: 9,
-    name: 'Infiltrator',
+    name: "Infiltrator",
     price: 17,
     strength: 5,
     agility: 9,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/ac3220.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/ac3220.png",
   },
   {
     id: 10,
-    name: 'Leader',
+    name: "Leader",
     price: 22,
     strength: 7,
     agility: 6,
-    img: 'https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/e41f26.png',
+    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/e41f26.png",
   },
-]
-
+];
 
 const App = () => {
   // Setting up state - state can be a boolean, a string, a number, an array of objects, a piece of data that you are using to control keeping some data on the screen & that data can be updated.
   //1. Creating a new state variable named team & setting initial state to an empty array.
-  // (Using isTeam instead of team to work with state variables conventions per lesson.)
-  // useState() is invoking the useState function & helping us get our return values.
-  // useState() returns an array & pulls out the 2 variables of that array in its corresponding positions.
-  const [isTeam, setIsTeam] = useState([]);
-  console.log('My team state variable/value is:', isTeam);
+  const [team, setTeam] = useState([]);
+  console.log("My team state variable/value is:", team);
 
   //2. Creating new state variable named money & setting initial state to 100
   const [money, setMoney] = useState(100);
@@ -105,13 +101,10 @@ const App = () => {
   const [zombieFighters, setZombieFighters] = useState(fighters);
 
   // 6. Create a function named handleAddFighter().
-  // ! Need to understand event listeners/handlers better to do this part.
-  // const handleAddFighter = () =>
-
-
-
-
-
+  const handleAddFighter = () => {
+    // TODO: implement the logic to handle user clicking
+    console.log("Add Fighter is working!");
+  };
 
   return (
     <>
@@ -128,29 +121,22 @@ const App = () => {
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
-            <button className='button'>ADD</button>
+            <button className="button" onClick={handleAddFighter} data-id={fighter.id}>ADD</button>
           </li>
         ))}
       </ul>
 
       {/* 5. Display the current value of money in the UI. */}
       <h4>The Current Value of Money: {money}</h4>
-      <h4>Team Strength: {}</h4>
-      <h4>Team Agility: {}</h4>
-      <h4>Team: {}</h4>
+      <h4>Team Strength: { }</h4>
+      <h4>Team Agility: { }</h4>
+      <h4>Team: { }</h4>
       <p>Pick some team members</p>
-      
     </>
   );
-}
+};
 
-
-
-export default App
-
-
-
-
+export default App;
 
 /*
 React Components I Could Create:
