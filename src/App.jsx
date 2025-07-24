@@ -117,6 +117,7 @@ const App = () => {
       <ul>
         {zombieFighters.map((fighter) => (
           <li key={fighter.id}>
+            {/* Putting this part in order of the screenshot of how fighter is supposed to look on UI.*/}
             <img src={fighter.img} alt={fighter.name} />
             <h3>{fighter.name}</h3>
             <p>Price: {fighter.price}</p>
