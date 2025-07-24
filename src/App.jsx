@@ -1,3 +1,5 @@
+// Hi Luke! I have a lot of notes on this lab, since I'm trying to understand it as I do the lesson (So I can come back later and understand what I did. Just fyi!)
+
 //importing the useState() hook from React at top of App.jsx so that can initialize & use state
 import { useState } from 'react';
 import './App.css';
@@ -91,6 +93,8 @@ const App = () => {
   // Setting up state - state can be a boolean, a string, a number, an array of objects, a piece of data that you are using to control keeping some data on the screen & that data can be updated.
   //1. Creating a new state variable named team & setting initial state to an empty array.
   // (Using isTeam instead of team to work with state variables conventions per lesson.)
+  // useState() is invoking the useState function & helping us get our return values.
+  // useState() returns an array & pulls out the 2 variables of that array in its corresponding positions.
   const [isTeam, setIsTeam] = useState();
   console.log('My team state variable/value is:', isTeam);
 
