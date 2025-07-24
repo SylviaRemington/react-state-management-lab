@@ -95,7 +95,7 @@ const App = () => {
   // (Using isTeam instead of team to work with state variables conventions per lesson.)
   // useState() is invoking the useState function & helping us get our return values.
   // useState() returns an array & pulls out the 2 variables of that array in its corresponding positions.
-  const [isTeam, setIsTeam] = useState();
+  const [isTeam, setIsTeam] = useState([]);
   console.log('My team state variable/value is:', isTeam);
 
   //2. Creating new state variable named money & setting initial state to 100
