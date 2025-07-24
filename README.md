@@ -57,6 +57,8 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 ### Step 6
 6. Create a function named **handleAddFighter()**. It should accept a fighter object as an argument. This function will be triggered when you click the **Add** button for any character in the **zombieFighters** list.
 
+- Before adding a character to the team, check if you have enough money to afford them. If your money is less than the character’s price, you shouldn’t be able to add them. In such cases, log a message to the console, such as **"Not enough money"**.
+
 - When you click Add on a character, this function should add the selected character’s object to the existing team state array. This is how you build your team.
 
 - You’ll also need to remove the character from the **zombieFighters** state so they can’t be added again. To do this, you’ll need to determine which character needs to be removed. Notice how each fighter has a unique **id**. Maybe you could use that to help you decide which one needs to be removed.
@@ -64,8 +66,6 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 - Once the character to be removed is identified, the **zombieFighters** state should be updated to exclude this character. This can be achieved by creating a new array that filters out the selected character. Once you have the new array, use it to set the **zombieFighters** state.
 
 - Each character comes with a **price**. Upon adding a character to your team, subtract the character’s **price** from your current **money** value. Think of it as spending money to recruit a team member.
-
-- Before adding a character to the team, check if you have enough money to afford them. If your money is less than the character’s price, you shouldn’t be able to add them. In such cases, log a message to the console, such as **"Not enough money"**.
 
 ### Step 7
 7. Now that you can add characters to your team let’s focus on displaying and managing them within your application’s interface.

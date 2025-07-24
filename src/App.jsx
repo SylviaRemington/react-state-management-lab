@@ -102,8 +102,14 @@ const App = () => {
 
   // 6. Create a function named handleAddFighter().
   const handleAddFighter = () => {
-    // TODO: implement the logic to handle user clicking
     console.log("Add Fighter is working!");
+
+    if (money < fighter.price) {
+      console.log("Not enough money");
+      return; //finish & exits function if not enough money
+    }
+
+    
   };
 
   return (
