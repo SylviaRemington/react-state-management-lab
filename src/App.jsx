@@ -1,4 +1,4 @@
-//importing the useState() hook from React at top of App.jsx
+//importing the useState() hook from React at top of App.jsx so that can initialize & use state
 import { useState } from 'react';
 import './App.css';
 
@@ -99,15 +99,17 @@ const App = () => {
   //3. Creating new state variable named zombieFighters & setting initial state to the array of objects - different fighters against zombies.
   const [zombieFighters, setZombieFighters] = useState(fighters);
 
+  //4. Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH
+  // Show all zombie fighters on screen by looping through the list 
+  // Display the list of zombie fighters by looping through the array and rendering them in the user interface of App.jsx.
+
+
 
   return (
     <h1>Hello world!</h1>
   );
 }
 
-//4. Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH
-// Show all zombie fighters on screen by looping through the list 
-// Display the list of zombie fighters by looping through the array and rendering them in the user interface of App.jsx.
 
 
 export default App
