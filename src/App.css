@@ -1,12 +1,12 @@
 #root {
   margin: 16px;
-  background-color: rgb(126, 180, 228);
+  /* background-color: rgb(126, 180, 228); */
   display: flex;
 }
 
-body {
+/* body {
   background-color: #747bff;
-}
+} */
 
 ul {
   display: flex;
