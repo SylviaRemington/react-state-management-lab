@@ -25,6 +25,8 @@ If you are developing a production application, we recommend using TypeScript wi
 **Zombie Fighters Image (of what I'm creating):**
 ![ZombieFighters](./public/Zombie_Fighters.png)
 
+**What I created with added images & different CSS:**
+
 ## Exercise Overview
 - Welcome to the React State Management Lab! In this lab, we’ll interact with state to better understand how to manage it in a React application. Your task is to assemble a team of characters to survive a zombie apocalypse. You will:
 
