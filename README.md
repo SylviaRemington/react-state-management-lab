@@ -1,3 +1,7 @@
+![NinjaSuperstarFighterTeamPage](./public/NinjaSuperstarFighterTeamPage.png)
+
+![NinjaSuperstarFighterTeamPageBeforeStyling](./public/NinjaSuperstarFightersBeforeAddtlStyling2025-07-25at4.44.02AM.png)
+
 # React State Management Lab
 
 ## About
