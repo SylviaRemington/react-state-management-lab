@@ -105,8 +105,8 @@ const App = () => {
   // ----------------------------------------------------------------------------------------------
 
   // handleAddFighter Function
+  // Step 6 of Lesson - part 1 of 2 - Create a function named handleAddFighter().
 
-  //Step 6 of Lesson - Create a function named handleAddFighter().
   const handleAddFighter = (fighter) => {
     console.log('Add Fighter is working! 🎉🎉🎉');
 
@@ -147,6 +147,7 @@ const App = () => {
   // ----------------------------------------------------------------------------------------------
 
   // handleRemoveFighter function
+  // Step 10 & Step 11 of Lesson - part 1 of 2
 
   const handleRemoveFighter = (fighter) => {
     console.log('Remove Fighter is working! Bye Bye!');
@@ -186,8 +187,9 @@ const App = () => {
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
+
+            {/* Step 6 of Lesson - part 2 of 2 */}
             <button className='button' onClick={() => handleAddFighter(fighter)}>ADD</button>
-            <button onClick={() => handleRemoveFighter(fighter)}>REMOVE</button>
           </li>
         ))}
       </ul>
@@ -205,6 +207,9 @@ const App = () => {
               <p>Price: {fighter.price}</p>
               <p>Strength: {fighter.strength}</p>
               <p>Agility: {fighter.agility}</p>
+
+              {/* Step 10 & Step 11 of Lesson - part 2 of 2 */}
+              <button onClick={() => handleRemoveFighter(fighter)}>REMOVE</button>
             </li>
           ))}
         </ul>
