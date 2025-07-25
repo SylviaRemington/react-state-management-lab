@@ -73,7 +73,7 @@ const fighters = [
   {
     id: 8,
     name: "Brawler",
-    price: 11,
+    price: 1,
     strength: 8,
     agility: 3,
     img: '/NinjaSuperstarFighterTeam/Brawler.png'
@@ -108,7 +108,7 @@ const fighters = [
     {
     id: 12,
     name: "Wise Ninja",
-    price: 75,
+    price: 14,
     strength: 5,
     agility: 10,
     img: '/NinjaSuperstarFighterTeam/Shadow2.png'
@@ -117,8 +117,8 @@ const fighters = [
     id: 13,
     name: "Storm - Weather Ninja",
     price: 5,
-    strength: 10000,
-    agility: 200,
+    strength: 10,
+    agility: 2,
     img: '/NinjaSuperstarFighterTeam/yet another ninja.png'
   },
 ];
@@ -240,7 +240,7 @@ const App = () => {
         </ul>
       )}
 
-      <h2>All Available Fighters From Which To Choose:</h2>
+      <h3>All Available Fighters From Which To Choose:</h3>
       {/* Step 4 of Lesson - Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH */}
       <ul>
         {zombieFighters.map((fighter) => (
