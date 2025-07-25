@@ -112,6 +112,24 @@ const App = () => {
     // Adding fighter to the end of the array (of the team I have - starts as an empty array) & save new version of the team
     setTeam([...team, fighter]);
 
+    // Removing original fighter from zombieFighters array
+    const updatedFighters = zombieFighters.filter((originalFighter) => {
+      return originalFighter.id !== fighter.id;
+    });
+
+    //Addtl version
+    //filter zombieFighters - another way but this seems more complex to me
+    //const updatedFighters = zombieFighters.filter((f) => f.id !== fighter.id);
+
+    // Addtl function but longer:
+    // const updatedFighters = [];
+    // for (let i = 0; i < zombieFighters.length; i++) {
+    //   const currentFighter = zombieFighters[i];
+    //   if (currentFighter.id !== fighter.id) {
+    //     updatedFighters.push(currentFighter);
+    //   }
+    // }
+
 
   };
 
