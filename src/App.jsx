@@ -99,10 +99,10 @@ const App = () => {
 
   //Step 3 of Lesson - Creating new state variable named zombieFighters & setting initial state to the array of objects - different fighters against zombies.
   const [zombieFighters, setZombieFighters] = useState(fighters);
-  
+
 
   // handleAddFighter Function-----------------------------------------------------------------------
-  
+
   //Step 6 of Lesson - Create a function named handleAddFighter().
   const handleAddFighter = (fighter) => {
     console.log('Add Fighter is working! 🎉🎉🎉');
@@ -112,7 +112,7 @@ const App = () => {
       return; //finish & exit function if not enough money
     }
 
-    // Adding fighter to the end of the array (of the team I have - starts as an empty array) & save new version of the team
+    // Adding fighter to the end of the array (of the team I have - starts as an empty array) & save new version of the team via spread.
     // Setting the new state of team via setTeam
     setTeam([...team, fighter]);
 
@@ -164,8 +164,27 @@ const App = () => {
         ))}
       </ul>
 
-      <h4>Team: { }</h4>
-      <p>Pick some team members</p>
+      {/* Step #7 */}
+      <h4>Superstar Fighter Team: </h4>
+      {team.length === 0 ? (
+        // taking off exclamation mark - looks better
+        <p>Pick some team members</p>
+      ) : (
+        <ul>
+          {team.map((fighter) => (
+            <li key={fighter.id}>
+              <img src={fighter.img} alt={fighter.name} />
+              <h3>{fighter.name}</h3>
+              <p>Price: {fighter.price}</p>
+              <p>Strength: {fighter.strength}</p>
+              <p>Agility: {fighter.agility}</p>
+            </li>
+          ))}
+        </ul>
+      )}
+
+
+      
       <h4>Team Strength: { }</h4>
       <h4>Team Agility: { }</h4>
       {/* Step 5 of Lesson - Display the current value of money in the UI. */}
