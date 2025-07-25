@@ -102,6 +102,7 @@ const App = () => {
   
 
   // handleAddFighter Function-----------------------------------------------------------------------
+  
   //Step 6 of Lesson - Create a function named handleAddFighter().
   const handleAddFighter = (fighter) => {
     console.log('Add Fighter is working! 🎉🎉🎉');
@@ -139,6 +140,7 @@ const App = () => {
     // Changing the updated state of money through setMoney - Lesson: Subtract the character’s price from your current money value.
     setMoney(money - fighter.price);
   };
+  
   // ----------------------------------------------------------------------------------------------
 
 
