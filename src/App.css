@@ -1,6 +1,8 @@
 #root {
   margin: 16px;
   /* background-color: rgb(126, 180, 228); */
+  background-color: black;
+  color: white;
 }
 
 * {
@@ -28,8 +30,15 @@ li {
 }
 
 .button {
-  background-color: black;
+  background-color: rgb(19, 121, 210);
   color: white;
+}
+
+.removebutton {
+  background-color: grey;
+  color: white;
+  /* Wanted to make the remove button smaller and less prominent. */
+  font-size: 12px;
 }
 
 .pick-some-team-members {

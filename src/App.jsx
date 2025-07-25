@@ -209,7 +209,7 @@ const App = () => {
               <p>Agility: {fighter.agility}</p>
 
               {/* Step 10 & Step 11 of Lesson - part 2 of 2 */}
-              <button onClick={() => handleRemoveFighter(fighter)}>REMOVE</button>
+              <button className='removebutton' onClick={() => handleRemoveFighter(fighter)}>REMOVE</button>
             </li>
           ))}
         </ul>
