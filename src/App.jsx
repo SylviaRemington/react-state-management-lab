@@ -176,26 +176,17 @@ const App = () => {
     <>
       <h1>Zombie Apocalypse Fighters</h1>
 
-      <h2>All Available Fighters</h2>
-      {/* Step 4 of Lesson - Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH */}
-      <ul>
-        {zombieFighters.map((fighter) => (
-          <li key={fighter.id}>
-            {/* Putting this part in order of the screenshot of how fighter is supposed to look on UI.*/}
-            <img src={fighter.img} alt={fighter.name} />
-            <h3>{fighter.name}</h3>
-            <p>Price: {fighter.price}</p>
-            <p>Strength: {fighter.strength}</p>
-            <p>Agility: {fighter.agility}</p>
+      {/* Step 5 of Lesson - Display the current value of money in the UI. */}
+      <h2>Current Money Left: ${money} zombiecoin </h2>
 
-            {/* Step 6 of Lesson - part 2 of 2 */}
-            <button className='button' onClick={() => handleAddFighter(fighter)}>ADD</button>
-          </li>
-        ))}
-      </ul>
+      {/* Step 8 of Lesson - part 2 of 2 - first part at line 169 */}
+      <h2>Team Strength: {totalStrength}</h2>
+
+      {/* Step 9 of Lesson - part 2 of 2 - first part at line 172 */}
+      <h2>Team Agility: {totalAgility}</h2>
 
       {/* Step #7 */}
-      <h4>My Ninja Superstar Fighter Team: </h4>
+      <h3>My Ninja Superstar Fighter Team: </h3>
       {team.length === 0 ? (
         <p className="pick-some-team-members">Pick some team members!</p>
       ) : (
@@ -215,14 +206,23 @@ const App = () => {
         </ul>
       )}
 
-      {/* Step 8 of Lesson - part 2 of 2 */}
-      <h4>Team Strength: {totalStrength}</h4>
+      <h2>All Available Fighters From Which To Choose:</h2>
+      {/* Step 4 of Lesson - Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH */}
+      <ul>
+        {zombieFighters.map((fighter) => (
+          <li key={fighter.id}>
+            {/* Putting this part in order of the screenshot of how fighter is supposed to look on UI.*/}
+            <img src={fighter.img} alt={fighter.name} />
+            <h3>{fighter.name}</h3>
+            <p>Price: {fighter.price}</p>
+            <p>Strength: {fighter.strength}</p>
+            <p>Agility: {fighter.agility}</p>
 
-      {/* Step 9 of Lesson - part 2 of 2 */}
-      <h4>Team Agility: {totalAgility}</h4>
-
-      {/* Step 5 of Lesson - Display the current value of money in the UI. */}
-      <h4>The Current Value of Money: {money}</h4>
+            {/* Step 6 of Lesson - part 2 of 2 */}
+            <button className='button' onClick={() => handleAddFighter(fighter)}>ADD</button>
+          </li>
+        ))}
+      </ul>
     </>
   );
 };
