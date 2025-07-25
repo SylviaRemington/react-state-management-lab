@@ -161,10 +161,6 @@ const App = () => {
     setMoney(money + fighter.price);
   };
 
-  
-
-
-
   // ----------------------------------------------------------------------------------------------
 
   // Step 8 of Lesson - part 1 of 2
@@ -191,6 +187,7 @@ const App = () => {
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
             <button className='button' onClick={() => handleAddFighter(fighter)}>ADD</button>
+            <button onClick={() => handleRemoveFighter(fighter)}>REMOVE</button>
           </li>
         ))}
       </ul>
