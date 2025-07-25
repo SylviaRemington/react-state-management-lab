@@ -140,7 +140,7 @@ const App = () => {
     // Changing the updated state of money through setMoney - Lesson: Subtract the character’s price from your current money value.
     setMoney(money - fighter.price);
   };
-  
+
   // ----------------------------------------------------------------------------------------------
 
 
@@ -159,7 +159,6 @@ const App = () => {
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
-            {/* <button className="button" onClick={handleAddFighter} data-id={fighter.id}>ADD</button> */}
             <button className='button' onClick={() => handleAddFighter(fighter)}>ADD</button>
           </li>
         ))}
