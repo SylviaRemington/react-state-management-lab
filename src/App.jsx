@@ -90,22 +90,24 @@ const fighters = [
 
 const App = () => {
   // Setting up state - state can be a boolean, a string, a number, an array of objects, a piece of data that you are using to control keeping some data on the screen & that data can be updated.
-  //1. Creating a new state variable named team & setting initial state to an empty array.
+  //Step 1 of Lesson - Creating a new state variable named team & setting initial state to an empty array.
   const [team, setTeam] = useState([]);
   console.log("My team state variable/value is:", team);
 
-  //2. Creating new state variable named money & setting initial state to 100
+  //Step 2 of Lesson - Creating new state variable named money & setting initial state to 100
   const [money, setMoney] = useState(100);
 
-  //3. Creating new state variable named zombieFighters & setting initial state to the array of objects - different fighters against zombies.
+  //Step 3 of Lesson - Creating new state variable named zombieFighters & setting initial state to the array of objects - different fighters against zombies.
   const [zombieFighters, setZombieFighters] = useState(fighters);
+  
 
-  // 6. Create a function named handleAddFighter().
-  const handleAddFighter = () => {
-    console.log("Add Fighter is working!");
+  // handleAddFighter Function-----------------------------------------------------------------------
+  //Step 6 of Lesson - Create a function named handleAddFighter().
+  const handleAddFighter = (fighter) => {
+    console.log('Add Fighter is working! 🎉🎉🎉');
 
     if (money < fighter.price) {
-      console.log("Not enough money");
+      console.log('❌ Not enough money');
       return; //finish & exits function if not enough money
     }
 
@@ -130,15 +132,21 @@ const App = () => {
     //   }
     // }
 
+    // Once you have the new array, use it to set the zombieFighters state.
+    setZombieFighters(updatedFighters);
 
+    // Subtract the character’s price from your current money value.
+    setMoney(money - fighter.price);
   };
+  // ----------------------------------------------------------------------------------------------
+
 
   return (
     <>
       <h1>Zombie Apocalypse Fighters</h1>
 
       <h2>All Available Fighters</h2>
-      {/* 4. Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH */}
+      {/* Step 4 of Lesson - Map through zombieFighters to show image, name, price, strength, agility & ADD BUTTON FOR EACH */}
       <ul>
         {zombieFighters.map((fighter) => (
           <li key={fighter.id}>
@@ -148,12 +156,13 @@ const App = () => {
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
             <p>Agility: {fighter.agility}</p>
-            <button className="button" onClick={handleAddFighter} data-id={fighter.id}>ADD</button>
+            {/* <button className="button" onClick={handleAddFighter} data-id={fighter.id}>ADD</button> */}
+            <button className='button' onClick={() => handleAddFighter(fighter)}>ADD</button>
           </li>
         ))}
       </ul>
 
-      {/* 5. Display the current value of money in the UI. */}
+      {/* Step 5 of Lesson - Display the current value of money in the UI. */}
       <h4>The Current Value of Money: {money}</h4>
       <h4>Team Strength: { }</h4>
       <h4>Team Agility: { }</h4>
