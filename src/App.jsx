@@ -107,7 +107,7 @@ const App = () => {
     console.log('Add Fighter is working! 🎉🎉🎉');
 
     if (money < fighter.price) {
-      console.log('❌ Not enough money');
+      console.log('Not enough money');
       return; //finish & exit function if not enough money
     }
 
