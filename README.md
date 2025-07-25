@@ -119,7 +119,6 @@ Follow these steps to complete the exercise. Keep all your code in the App.jsx f
 
 - Optionally, you could also make it so a message displays in the browser when there isn’t enough budget to add a team member.
 
-<br>
 
 # React + Vite
 
