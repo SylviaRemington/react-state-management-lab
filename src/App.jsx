@@ -102,7 +102,9 @@ const App = () => {
   const [zombieFighters, setZombieFighters] = useState(fighters);
 
 
-  // handleAddFighter Function-----------------------------------------------------------------------
+  // ----------------------------------------------------------------------------------------------
+
+  // handleAddFighter Function
 
   //Step 6 of Lesson - Create a function named handleAddFighter().
   const handleAddFighter = (fighter) => {
@@ -144,8 +146,33 @@ const App = () => {
 
   // ----------------------------------------------------------------------------------------------
 
-  // Step 8 of Lesson - - part 1 of 2
+  // handleRemoveFighter function
+
+  const handleRemoveFighter = (fighter) => {
+    console.log('Remove Fighter is working! Bye Bye!');
+    // Remove the fighter from the team - changing state with setTeam and updatedTeam filter function
+    const updatedTeam = team.filter((member) => member.id !== fighter.id);
+    setTeam(updatedTeam);
+
+    // Add the fighter back to the zombieFighters list with changing state to setZombieFighters
+    setZombieFighters([...zombieFighters, fighter]);
+
+    // Refund the fighter’s price with changing state with setMoney
+    setMoney(money + fighter.price);
+  };
+
+  
+
+
+
+  // ----------------------------------------------------------------------------------------------
+
+  // Step 8 of Lesson - part 1 of 2
+  // .reduce is 
   const totalStrength = team.reduce((total, fighter) => total + fighter.strength, 0);
+
+  // Step 9 of Lesson - part 1 of 2
+  const totalAgility = team.reduce((total, fighter) => total + fighter.agility, 0);
 
 
   return (
@@ -188,7 +215,9 @@ const App = () => {
 
       {/* Step 8 of Lesson - part 2 of 2 */}
       <h4>Team Strength: {totalStrength}</h4>
-      <h4>Team Agility: { }</h4>
+
+      {/* Step 9 of Lesson - part 2 of 2 */}
+      <h4>Team Agility: {totalAgility}</h4>
 
       {/* Step 5 of Lesson - Display the current value of money in the UI. */}
       <h4>The Current Value of Money: {money}</h4>
