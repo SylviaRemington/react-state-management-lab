@@ -167,8 +167,7 @@ const App = () => {
       {/* Step #7 */}
       <h4>My Ninja Superstar Fighter Team: </h4>
       {team.length === 0 ? (
-        // taking off exclamation mark - looks better
-        <p>Pick some team members</p>
+        <p className="pick-some-team-members">Pick some team members!</p>
       ) : (
         <ul>
           {team.map((fighter) => (

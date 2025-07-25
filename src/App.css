@@ -32,3 +32,8 @@ li {
   background-color: black;
   color: white;
 }
+
+.pick-some-team-members {
+  color: red;
+  font-style: italic;
+}
