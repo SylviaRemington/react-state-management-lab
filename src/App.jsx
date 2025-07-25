@@ -109,7 +109,10 @@ const App = () => {
       return; //finish & exits function if not enough money
     }
 
-    
+    // Adding fighter to the end of the array (of the team I have - starts as an empty array) & save new version of the team
+    setTeam([...team, fighter]);
+
+
   };
 
   return (
