@@ -22,7 +22,8 @@ const fighters = [
     price: 10,
     strength: 5,
     agility: 5,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/033a16.png",
+    img: '/NinjaSuperstarFighterTeam/even_more_ninjas.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/033a16.png",
   },
   {
     id: 3,
@@ -30,7 +31,8 @@ const fighters = [
     price: 18,
     strength: 7,
     agility: 8,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/262c36.png",
+    img: '/NinjaSuperstarFighterTeam/Shadow.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/262c36.png",
   },
   {
     id: 4,
@@ -38,7 +40,8 @@ const fighters = [
     price: 14,
     strength: 7,
     agility: 6,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/3c1e70.png",
+    img: '/NinjaSuperstarFighterTeam/Tracker.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/3c1e70.png",
   },
   {
     id: 5,
@@ -46,7 +49,8 @@ const fighters = [
     price: 20,
     strength: 6,
     agility: 8,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/4b2900.png",
+    img: '/NinjaSuperstarFighterTeam/fire lady.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/4b2900.png",
   },
   {
     id: 6,
@@ -54,7 +58,8 @@ const fighters = [
     price: 15,
     strength: 5,
     agility: 7,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5a1e02.png",
+    img: '/NinjaSuperstarFighterTeam/Medic.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5a1e02.png",
   },
   {
     id: 7,
@@ -62,7 +67,8 @@ const fighters = [
     price: 16,
     strength: 6,
     agility: 5,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e.png",
+    img: '/NinjaSuperstarFighterTeam/Engineer.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/5e103e.png",
   },
   {
     id: 8,
@@ -70,7 +76,8 @@ const fighters = [
     price: 11,
     strength: 8,
     agility: 3,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/67060c.png",
+    img: '/NinjaSuperstarFighterTeam/Brawler.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/67060c.png",
   },
   {
     id: 9,
@@ -78,7 +85,8 @@ const fighters = [
     price: 17,
     strength: 5,
     agility: 9,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/ac3220.png",
+    img: '/NinjaSuperstarFighterTeam/Infiltrator.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/ac3220.png",
   },
   {
     id: 10,
@@ -86,7 +94,32 @@ const fighters = [
     price: 22,
     strength: 7,
     agility: 6,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/e41f26.png",
+    img: '/NinjaSuperstarFighterTeam/Leader.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/e41f26.png",
+  },
+  {
+    id: 11,
+    name: "Destroyer",
+    price: 25,
+    strength: 1000,
+    agility: 2000,
+    img: '/NinjaSuperstarFighterTeam/The_Destroyer.png'
+  },
+    {
+    id: 12,
+    name: "Wise Ninja",
+    price: 75,
+    strength: 5,
+    agility: 10,
+    img: '/NinjaSuperstarFighterTeam/Shadow2.png'
+  },
+    {
+    id: 13,
+    name: "Storm - Weather Ninja",
+    price: 5,
+    strength: 10000,
+    agility: 200,
+    img: '/NinjaSuperstarFighterTeam/yet another ninja.png'
   },
 ];
 
