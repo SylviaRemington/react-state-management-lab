@@ -1,4 +1,5 @@
-// Hi Luke! I have a lot of notes on this lab, since I'm trying to understand it as I do the lesson (So I can come back later and understand what I did. Just fyi!)
+// Hi Luke! I have a lot of notes on this lab, since I'm trying to keep track of where I'm at &
+// understand it as I do the lesson (So I can come back later and understand what I did. Just fyi!)
 
 //importing the useState() hook from React at top of App.jsx so that can initialize & use state
 import { useState } from "react";
@@ -143,6 +144,9 @@ const App = () => {
 
   // ----------------------------------------------------------------------------------------------
 
+  // Step 8 of Lesson - - part 1 of 2
+  const totalStrength = team.reduce((total, fighter) => total + fighter.strength, 0);
+
 
   return (
     <>
@@ -182,10 +186,10 @@ const App = () => {
         </ul>
       )}
 
-
-      
-      <h4>Team Strength: { }</h4>
+      {/* Step 8 of Lesson - part 2 of 2 */}
+      <h4>Team Strength: {totalStrength}</h4>
       <h4>Team Agility: { }</h4>
+
       {/* Step 5 of Lesson - Display the current value of money in the UI. */}
       <h4>The Current Value of Money: {money}</h4>
     </>
