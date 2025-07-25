@@ -112,6 +112,7 @@ const App = () => {
     }
 
     // Adding fighter to the end of the array (of the team I have - starts as an empty array) & save new version of the team
+    // Setting the new state of team via setTeam
     setTeam([...team, fighter]);
 
     // Removing original fighter from zombieFighters array
@@ -132,10 +133,10 @@ const App = () => {
     //   }
     // }
 
-    // Once you have the new array, use it to set the zombieFighters state.
+    // Setting the updated state of the zombieFighters through setZombieFighters - Lesson: Once you have the new array, use it to set the zombieFighters state.
     setZombieFighters(updatedFighters);
 
-    // Subtract the character’s price from your current money value.
+    // Changing the updated state of money through setMoney - Lesson: Subtract the character’s price from your current money value.
     setMoney(money - fighter.price);
   };
   // ----------------------------------------------------------------------------------------------
