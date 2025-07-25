@@ -188,7 +188,7 @@ const App = () => {
       {/* Step #7 */}
       <h3>My Ninja Superstar Fighter Team: </h3>
       {team.length === 0 ? (
-        <p className="pick-some-team-members">Pick some team members!</p>
+        <p className="pick-some-team-members">Pick some team members by clicking the 'ADD' Button below!</p>
       ) : (
         <ul>
           {team.map((fighter) => (
