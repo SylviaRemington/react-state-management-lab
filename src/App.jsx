@@ -163,12 +163,12 @@ const App = () => {
         ))}
       </ul>
 
-      {/* Step 5 of Lesson - Display the current value of money in the UI. */}
-      <h4>The Current Value of Money: {money}</h4>
-      <h4>Team Strength: { }</h4>
-      <h4>Team Agility: { }</h4>
       <h4>Team: { }</h4>
       <p>Pick some team members</p>
+      <h4>Team Strength: { }</h4>
+      <h4>Team Agility: { }</h4>
+      {/* Step 5 of Lesson - Display the current value of money in the UI. */}
+      <h4>The Current Value of Money: {money}</h4>
     </>
   );
 };
