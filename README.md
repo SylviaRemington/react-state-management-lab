@@ -13,6 +13,7 @@
 ![ZombieFighters](./public/Zombie_Fighters.png)
 
 **What I created with added images & different CSS:**
+![NinjaSuperstarFighterTeamPage](./public/NinjaSuperstarFighterTeamPage.png)
 
 ## Exercise Overview
 - Welcome to the React State Management Lab! In this lab, we’ll interact with state to better understand how to manage it in a React application. Your task is to assemble a team of characters to survive a zombie apocalypse. You will:
