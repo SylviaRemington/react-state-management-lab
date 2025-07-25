@@ -13,7 +13,8 @@ const fighters = [
     price: 12,
     strength: 6,
     agility: 4,
-    img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/0c2d6b.png",
+    img: '/NinjaSuperstarFighterTeam/Survivor.png'
+    // img: "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/react-state-management-lab/assets/0c2d6b.png",
   },
   {
     id: 2,
@@ -193,7 +194,7 @@ const App = () => {
         <ul>
           {team.map((fighter) => (
             <li key={fighter.id}>
-              <img src={fighter.img} alt={fighter.name} />
+              <img src={fighter.img} alt={fighter.name} style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
               <h3>{fighter.name}</h3>
               <p>Price: {fighter.price}</p>
               <p>Strength: {fighter.strength}</p>
@@ -212,7 +213,7 @@ const App = () => {
         {zombieFighters.map((fighter) => (
           <li key={fighter.id}>
             {/* Putting this part in order of the screenshot of how fighter is supposed to look on UI.*/}
-            <img src={fighter.img} alt={fighter.name} />
+            <img src={fighter.img} alt={fighter.name} style={{ width: '150px', height: '150px', objectFit: 'cover' }} />
             <h3>{fighter.name}</h3>
             <p>Price: {fighter.price}</p>
             <p>Strength: {fighter.strength}</p>
