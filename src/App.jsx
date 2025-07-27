@@ -139,7 +139,7 @@ const App = () => {
   // ----------------------------------------------------------------------------------------------
 
   // handleAddFighter Function
-  // Step 6 of Lesson - part 1 of 2 - Create a function named handleAddFighter().
+  // Step 6 of Lesson - part 1 of 2 - Create a function named handleAddFighter(). Part 2 is below in the return as a button with onClick.
 
   const handleAddFighter = (fighter) => {
     console.log('Add Fighter is working! 🎉🎉🎉');
@@ -149,39 +149,26 @@ const App = () => {
       return; //finish & exit function if not enough money
     }
 
-    // Adding fighter to the end of the array (of the team I have - starts as an empty array) & save new version of the team via spread.
+    // Adding fighter to the end of the array (of the team I have) Starts as an empty array & saves new version of the team via spread.
     // Setting the new state of team via setTeam
     setTeam([...team, fighter]);
 
-    // Removing original fighter from zombieFighters array
+    // Removing original fighter from zombieFighters array.
     const updatedFighters = zombieFighters.filter((originalFighter) => {
       return originalFighter.id !== fighter.id;
     });
 
-    //Addtl version
-    //filter zombieFighters - another way but this seems more complex to me
-    //const updatedFighters = zombieFighters.filter((f) => f.id !== fighter.id);
-
-    // Addtl function but longer:
-    // const updatedFighters = [];
-    // for (let i = 0; i < zombieFighters.length; i++) {
-    //   const currentFighter = zombieFighters[i];
-    //   if (currentFighter.id !== fighter.id) {
-    //     updatedFighters.push(currentFighter);
-    //   }
-    // }
-
-    // Setting the updated state of the zombieFighters through setZombieFighters - Lesson: Once you have the new array, use it to set the zombieFighters state.
+    // Setting the updated state of the zombieFighters through setZombieFighters - Lesson requirement: Once you have the new array, use it to set the zombieFighters state.
     setZombieFighters(updatedFighters);
 
-    // Changing the updated state of money through setMoney - Lesson: Subtract the character’s price from your current money value.
+    // Changing the updated state of money through setMoney - Lesson requirement: Subtract the character’s price from your current money value.
     setMoney(money - fighter.price);
   };
 
   // ----------------------------------------------------------------------------------------------
 
   // handleRemoveFighter function
-  // Step 10 & Step 11 of Lesson - part 1 of 2
+  // Step 10 & Step 11 of Lesson - part 1 of 2 - Part 2 is at bottom in the return as onClick button.
 
   const handleRemoveFighter = (fighter) => {
     console.log('Remove Fighter is working! Bye Bye!');
@@ -198,11 +185,11 @@ const App = () => {
 
   // ----------------------------------------------------------------------------------------------
 
-  // Step 8 of Lesson - part 1 of 2
-  // .reduce is 
+  // Step 8 of Lesson - part 1 of 2 - Part 2 in the return
+  // .reduce is the best to use here after researching
   const totalStrength = team.reduce((total, fighter) => total + fighter.strength, 0);
 
-  // Step 9 of Lesson - part 1 of 2
+  // Step 9 of Lesson - part 1 of 2 - Part 2 in the return
   const totalAgility = team.reduce((total, fighter) => total + fighter.agility, 0);
 
 
@@ -213,10 +200,10 @@ const App = () => {
       {/* Step 5 of Lesson - Display the current value of money in the UI. */}
       <h2>Current Money Left: ${money} zombiecoin </h2>
 
-      {/* Step 8 of Lesson - part 2 of 2 - first part at line 169 */}
+      {/* Step 8 of Lesson - part 2 of 2 */}
       <h2>Team Strength: {totalStrength}</h2>
 
-      {/* Step 9 of Lesson - part 2 of 2 - first part at line 172 */}
+      {/* Step 9 of Lesson - part 2 of 2 */}
       <h2>Team Agility: {totalAgility}</h2>
 
       {/* Step #7 */}
@@ -262,6 +249,7 @@ const App = () => {
 };
 
 export default App;
+
 
 /*
 React Components I Could Create:
